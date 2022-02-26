@@ -10,7 +10,7 @@
     
 
 ### verify server is up and running.
-    <a>http://localhost:3000/</a>
+<a>http://localhost:3000/</a>
     
 
 ### kill docker containers.
