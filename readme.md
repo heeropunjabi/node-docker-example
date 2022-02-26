@@ -1,26 +1,26 @@
-### install docker on your Mac.
+### 1.install docker on your Mac.
     brew install docker --cask
     
-### verify docker is installed.
+### 2.verify docker is installed.
     docker --version
     
 
-### start containers on your machine.
+### 3.start containers on your machine.
     docker-compose up
     
 
-### verify server is up and running.
+### 4.verify server is up and running.
 <a>http://localhost:3000/</a>
     
 
-### kill docker containers.
+### 5.kill docker containers.
     docker-compose down
     
 
-### list all the images on your machine.
+### 5.list all the images on your machine.
     docker images
     
-### delete list of images.
+### 6.delete list of images.
     docker rmi <IMAGE_ID>
 
 #### refrence links
