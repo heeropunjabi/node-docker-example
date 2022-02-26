@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  webdev:
+    build:
+      context: ./
+      target: dev
+    volumes:
+      - .:/src
+    command: npm run start:dev
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: development
+      DEBUG: node-docker-example:*
+
+  webprod:
+    build:
+      context: ./
+      target: production
+    volumes:
+      - .:/src
+    command: npm run start
+    ports:
+      - "3001:3001"
+    environment:
+      NODE_ENV: production
+      DEBUG: node-docker-example:*
+      PORT: 3001
